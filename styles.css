@@ -1,0 +1,127 @@
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 1rem;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   REQUIRED: LOADING SPINNER
+   ========================= */
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border: 6px solid #ddd;
+    border-top: 6px solid #1e88e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* =========================
+   MAIN COUNTRY CARD
+   ========================= */
+
+.country-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-card img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   REQUIRED: BORDER GRID
+   (Small cards under country)
+   ========================= */
+
+.border-grid {
+    display: flex;              /* Required (grid or flex allowed) */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px auto 30px auto;
+}
+
+.border-country {
+    width: 90px;
+    padding: 8px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    text-align: center;
+}
+
+.border-country img {
+    width: 60px;
+    height: auto;
+}
+
+
+/* =========================
+   REQUIRED: ERROR STYLING
+   ========================= */
+
+.error {
+    color: white;
+    background-color: #d32f2f;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 20px auto;
+    width: fit-content;
+    font-weight: bold;
+}
+
+
+/* =========================
+   REQUIRED: HIDDEN CLASS
+   ========================= */
+
+.hidden {
+    display: none;
+}
