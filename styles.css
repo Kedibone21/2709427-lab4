@@ -26,6 +26,7 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+    
 }
 
 .spinner {
@@ -60,8 +61,7 @@ button {
 }
 
 .border-grid {
-    display: flex;              /* Required (grid or flex allowed) */
-    flex-wrap: wrap;
+    display: flex;              
     justify-content: center;
     gap: 10px;
     max-width: 500px;

@@ -11,6 +11,8 @@ spinner.classList.add('hidden');
 async function searchCountry(countryName) {
     if (!countryName) return;
 
+    
+
     try {
         // Clear previous data
         errorMessage.textContent = "";
@@ -21,7 +23,7 @@ async function searchCountry(countryName) {
         spinner.classList.remove('hidden');
 
         // Fetch main country
-        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
         
         if (!response.ok) {
             throw new Error("Country not found. Please try again.");
